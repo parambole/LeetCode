@@ -8,6 +8,10 @@ This is to solve and track all my LeetCode Progress
 * Saturday - Binary Search
 * Sunday - Competition
 
+Link for DP questions - https://leetcode.com/discuss/general-discussion/459286/Best-Posts-of-2019
+
+Link for Binary Search - 
+
 
 | Date  | Problem  | Category  | Difficulty  | Feel  |
 |---|---|---|---|---|
