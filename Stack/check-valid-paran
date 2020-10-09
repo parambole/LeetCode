@@ -1,0 +1,42 @@
+class Solution:
+    def isValid(self, s: str) -> bool:
+        
+        mapper = {
+            ')':'(',
+            '}':'{',
+            ']':'['
+        }
+        
+        stack = []
+        
+        for ch in s:
+            if ch in mapper:
+                if stack == [] or mapper[ch] != stack.pop():
+                    return False
+            else:
+                stack.append(ch)
+                
+        return True if stack == [] else False
+        
+        
+#         stack = []
+#         for ch in s:
+#             if ch in set(["(", "{", "["]):
+#                 stack.append(ch)
+#             else:
+#                 if len(stack) <= 0:
+#                     return False
+                
+#                 if ch == '}' and stack[-1] != '{':
+#                     return False
+                
+#                 if ch == ']' and stack[-1] != '[':
+#                     return False
+#                 if ch == ')' and stack[-1] != '(':
+#                     return False
+                
+#                 stack.pop()
+                
+#         if len(stack) != 0:
+#             return False
+#         return True
